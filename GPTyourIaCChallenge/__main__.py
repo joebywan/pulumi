@@ -63,7 +63,7 @@ yum -y update
 yum -y install httpd
 systemctl enable httpd
 systemctl start httpd
-echo "Hello, World!" > /var/www/html/index.html
+echo "Hello, World from Pulumi AI!" > /var/www/html/index.html
 """
 
 ami = ec2.get_ami(
